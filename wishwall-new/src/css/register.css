@@ -1,0 +1,98 @@
+.board{
+    border-radius:20px;
+    height:500px;
+    width: 500px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgb(241, 189, 235),rgb(83, 117, 211));
+   
+}
+
+
+.framework{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgb(238, 197, 233),rgb(165, 183, 233));
+}
+
+
+
+
+.register{
+    height:40px;
+    width: 80px;
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(250, 194, 236);
+    font-size:large;
+}
+.register:hover{
+    background-color: rgb(255, 246, 246);
+}
+.return{
+    height: 40px;
+    width: 80px;
+    margin-left: 30px;
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(250, 194, 236);
+    font-size:large;
+}
+.return:hover{
+    background-color: rgb(255, 246, 246);
+}
+a{
+    text-decoration: none;
+}
+.head{
+
+    text-align: center;
+    padding-top: 30px;
+    font-size:xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text1{
+    margin-top: 30px;
+    padding-left:50px;
+}
+.text2{
+    margin-top: 30px;
+    padding-left:140px;
+}
+.text3{
+    margin-top: 30px;
+    padding-left:103px;
+}
+.text{
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    border: 0ch;
+}
+#text:active{
+    border: 0ch;
+}
+
+
+.button{
+    margin:30px;
+    text-align: center;
+}
+.toLogin{
+    margin-top: 20px;
+}
+.picture{
+    text-align: center;
+}
+
+#msg{
+    text-align: center;
+    height:10px;
+    margin-top: 10px;
+    color:red;
+}
+.tip{
+    margin-top: 10px;
+}

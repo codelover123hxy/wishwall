@@ -1,0 +1,106 @@
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+}
+.login{
+    width: 120px;
+    height: 70px;
+    border-radius: 10px;
+    border-width: 1px;
+    box-shadow:  5px 5px 10px #cfd2c2,
+    -5px -5px 10px #f7fce8;
+    font-size:large;
+    border-color: rgb(250, 194, 236);
+}
+.login:hover{
+    background-color: rgb(255, 246, 246);
+}
+.EnglishLabel{
+    font-size: 50px;
+    margin-left: 30px;
+}
+.ChineseLabel{
+    font-size: 70px;
+}
+.register{
+    width: 120px;
+    height: 70px;
+    margin-left: 50px;
+    font-size:large;
+    border-radius: 10px;
+    box-shadow:  5px 5px 10px #cfd2c2,
+    -5px -5px 10px #f7fce8;
+    border-width: 1px;
+    border-color: rgb(250, 194, 236);
+}
+.register:hover{
+    background-color: rgb(255, 246, 246);
+}
+
+.footer{
+    font-size:large;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+} 
+
+
+
+
+
+
+.top{
+    padding-top: 40px;
+    font-weight: 700;
+    color:rgb(73, 73, 235);
+    
+    text-align: center;
+    
+}
+.framework{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background: #2980B9;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right,  #6DD5FA, #2980B9);  Chrome 10-25, Safari 5.1-6
+    background: linear-gradient(to right, #6DD5FA, #2980B9); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background-image:url() ; */
+    margin:0 auto;
+}
+
+
+.header{
+    margin-top: 30px;
+}
+
+.image{
+    padding: 30px;
+    width:100%;
+    text-align: center;
+}
+.welcome{
+
+    margin-top: 100px;
+    text-align: center;
+    font-size:xx-large;
+    color:blueviolet;
+}
+
+.wishwall{
+    margin-top: 60px;
+    width: 150px;
+    height: 100px;
+    font-size:larger;
+    background-color:#91c7ea;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: rgb(250, 194, 236);
+}
+.wishwall:hover{
+    background-color: rgb(178, 197, 252);
+}

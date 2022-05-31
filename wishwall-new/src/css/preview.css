@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    background-size:100% auto;
+    background-position: bottom;
+}
+#header{
+    padding:  10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#title{
+    position: relative;
+    color: white;
+    font-size: 30px;
+}
+#main{
+    height: 100%;
+    width: auto;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+    padding-left: 17cm;
+    font-weight: 900;
+    letter-spacing: 0.3cm;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    padding: 10px;
+    bottom: 0;
+}
+#img1{
+    position: relative;
+    top: 100px;
+    max-height: 100%;
+    height: auto;
+}
+.at-item {
+    animation-name: focus-in-contract;
+    animation-duration: 2.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+@keyframes focus-in-contract {
+    0% {
+        letter-spacing: 1em;
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}

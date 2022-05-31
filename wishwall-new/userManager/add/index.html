@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>心愿墙</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../src/css/ionicons.min.css">
+    <link rel="stylesheet" href="../../src/css/mdui.min.css">
+    <link rel="stylesheet" type="text/css" href="../../src/css/sheetManager.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.14/vue.min.js"></script>
+    <script src="/src/js/jquery-1.12.4.min.js"></script>
+</head>
+
+<body class="mdui-theme-primary-indigo mdui-theme-accent-pink" >
+    <div id="header">
+        <span id="title">用户心愿管理界面</span>
+        <span id="accounttools">
+            <div class="mdui-chip"><span id="userName" class="mdui-chip-title"></span></div>
+            <button id="quit" class="mdui-btn mdui-color-theme-accent mdui-ripple" onclick="quit()">登出</button>
+        </span>
+    </div>
+    <div id="sidebar">
+        <div>
+            <div class="tablinks" onclick="" style="background-color: rgba(221, 221, 221, 0.6);">发布心愿</div>
+            <div class="tablinks" onclick="toManage()">管理心愿</div>
+        </div>
+
+        <div class="tablinks" onclick="toMain()">返回心愿墙</div>
+    </div>
+    <div id="workArea">
+        <div id="editor" class="mdui-card">
+            <textarea id="content" class="mdui-textfield-input" title="content" maxlength="50"
+                placeholder="在这里输入你美好的心愿吧！" v-model="content" v-on:input="inputContent"></textarea>
+            <div><span class="advice">输入一句话，尽量不要使用空格和换行</span>
+                <span id="length" class="advice">字数 {{len}} / 50</span>
+            </div>
+            <!-- <div id="box1">
+                <label for="tidyName">TA 姓名的英文缩写：</label>
+                <input type="text" id="tidyName" class="mdui-textfield-input" name="tidyName" v-model="object">
+                <div class="advice">注意姓名长度，字母应大写，如“李肖”，应填写“LX”</div>
+            </div> -->
+   
+            <div id="tools">
+                <button id="submit" class="mdui-btn mdui-color-theme-accent mdui-ripple"
+                    onclick="submit()">发送心愿</button>
+            </div>
+        </div>
+        <div id="preview" class="mdui-card">
+            <center>
+                <h3>预览</h3>
+            </center>
+            <div class="note mdui-card mdui-color-amber-100">
+                <span class="quote">“</span>
+                <span class="sheet">{{content}}</span>
+                <div class="attach">
+                    <span class="check"></span>
+                    <span class="writer">—— {{writer}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        如有疑问可至学生活动中心207校团委办公室咨询
+    </div>
+
+</body>
+<script src="../../src/js/add.js"></script>
+
+</html>
